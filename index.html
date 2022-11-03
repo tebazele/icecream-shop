@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ice Cream Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/6.9.96/css/materialdesignicons.min.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body class="gochi-hand">
+    <header class="container-fluid">
+        <section class="row justify-content-between bg-header align-items-center">
+            <div class="col-md-10 col-6 p-3 text-light">
+                <h1 class="header-text ps-4">Ginny's Magic Ice Cream</h1>
+            </div>
+            <div class="col-md-2 col-6 p-3">
+                <img src="/logo.png" class="img-fluid logo-img-tiny">
+            </div>
+        </section>
+        <!-- place navbar here -->
+    </header>
+    <main class="container-fluid bg-light-gray">
+        <section class="row p-3 justify-content-around">
+            <!-- SECTION checkout window -->
+            <div class="col-4 p-3 mt-3 bg-elephant rounded border border-dark">
+                <div class="sticky-top">
+                    <h2 class="p-2">Checkout</h2>
+                    <section class="row border border-dark rounded bg-light mx-2">
+                        <div class="col-4">Name</div>
+                        <div class="col-3">Scoops</div>
+                        <div class="col-3">Each</div>
+                        <div class="col-2">Total</div>
+                    </section>
+                    <!-- SECTION add to cart area -->
+                    <section class="row py-4 mx-2" id="cart">
+                        <!-- <div class="col-4">Strawberry</div>
+                    <div class="col-3">3</div>
+                    <div class="col-3">$2</div>
+                    <div class="col-2">$6</div> -->
+                    </section>
+                    <section class="row p-3">
+                        <div class="col-12 text-end">
+                            <h6>Total: $<span id="total">0</span></h6>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button class="btn btn-light px-4 border border-dark" onclick="buy()">BUY</button>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            <!-- SECTION all options for sale -->
+            <div class="col-7 border rounded border-dark mt-3 ms-3 bg-elephant">
+                <!-- ANCHOR ice cream for sale -->
+                <section class="row justify-content-center" id="ice-cream-options"></section>
+                <!-- ANCHOR toppings for sale -->
+                <section class="row justify-content-center text-center" id="toppings-options"></section>
+                <!-- ANCHOR cones for sale -->
+                <section class="row justify-content-center text-center" id="cones-options"></section>
+            </div>
+        </section>
+
+    </main>
+    <footer class="container-fluid">
+        <section class="row text-center justify-content-center bg-header">
+            <div class="col-4 py-3">
+                <img src="/logo.png" class="img-fluid logo-img">
+            </div>
+        </section>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
